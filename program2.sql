@@ -7,3 +7,4 @@ CREATE TABLE `xworkzodc`.`vanita` (
   PRIMARY KEY (`id`));
   insert into vanita values(1,'vasu');
 SELECT * FROM xworkzodc.vanita;
+
