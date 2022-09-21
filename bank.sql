@@ -1,3 +1,5 @@
+
+/*CHARACTER &CASE MANIPULATIVE FUNCTIONS*/
 USE XWORKZODC;
 CREATE TABLE BANK(id int,noOfCustomers int,bName varchar(20),location varchar(20),createdate timestamp,createBy varchar(20)default 'VANITA');
 insert into bank (id,noOfCustomers,bName,location,createdate)values (8,900,'axis','mumbai',now());

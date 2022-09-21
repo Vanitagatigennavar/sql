@@ -1,3 +1,5 @@
+
+/* USING AGGREGATE FUNCTIONS*/
 use xworkzodc;
 create table cake(id int,cakeName varchar(20),cakeColor varchar(20),cakePrice double,cakeShape varchar(20),
 cakeType varchar(20),createBy varchar(20)default 'Shreya',createDate timestamp default now(),
