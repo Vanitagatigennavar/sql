@@ -1,12 +1,13 @@
 USE XWORKZODC;
 CREATE TABLE BANK(id int,noOfCustomers int,bName varchar(20),location varchar(20),createdate timestamp,createBy varchar(20)default 'VANITA');
-insert into bank (id,noOfCustomers,bName,location,createdate,createBy)values (8,900,'axis','mumbai',now(),'priya');
-insert into bank (id,noOfCustomers,bName,location,createdate,createBy)values (2,300,'IDFC','TUMKUR',21/09/2000,'VASU');
-insert into bank (id,noOfCustomers,bName,location,createdate,createBy)values (3,400,'BOB','BELAGAVI',now(),'VANITA');
-insert into bank (id,noOfCustomers,bName,location,createdate,createBy)values (4,500,'HDFC','BANGLORE',now(),'NAYAN');
-insert into bank (id,noOfCustomers,bName,location,createdate,createBy)values (5,600,'KCC','HUBLI',now(),'DARSHAN');
-insert into bank (id,noOfCustomers,bName,location,createdate,createBy)values (5,700,'CITY UNION BANK','CHITRDURGA',now(),'SUDIP');
-insert into bank (id,noOfCustomers,bName,location,createdate,createBy)values (5,800,'PNB','KODAGU',now(),'PUNITH');
+insert into bank (id,noOfCustomers,bName,location,createdate)values (8,900,'axis','mumbai',now());
+insert into bank (id,noOfCustomers,bName,location,createdate)values (2,300,'IDFC','TUMKUR',21/09/2000);
+insert into bank (id,noOfCustomers,bName,location,createdate)values (3,400,'BOB','BELAGAVI',now());
+insert into bank (id,noOfCustomers,bName,location,createdate)values (4,500,'HDFC','BANGLORE',now());
+insert into bank (id,noOfCustomers,bName,location,createdate)values (5,600,'KCC','HUBLI',now());
+insert into bank (id,noOfCustomers,bName,location,createdate)values (5,700,'CITY UNION BANK','CHITRDURGA',now());
+insert into bank (id,noOfCustomers,bName,location,createdate)values (5,800,'PNB','KODAGU',now());
+insert into bank (id,noOfCustomers,bName,location,createdate)values (6,800,'PNB','belagavi',now());
 select * from bank;
 
 /*CASE MANIPULATIVE FUNCTIONS*/
@@ -24,7 +25,7 @@ select substr(location,3,6)from bank where id=3;
 
 select reverse('banglore')as ban;/*reverse only one string*/
 select reverse (bName) from bank; /*reverse bName column*/
-
-select bName from bank where bName like 'w%';
+SELECT * FROM bank;
+select bName from bank where bName like 'H%';
 select location from bank where location like'%W%';
 select createBy from bank where 'darshan'  like '%s'; 
