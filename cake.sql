@@ -1,4 +1,3 @@
-
 /* USING AGGREGATE FUNCTIONS*/
 use xworkzodc;
 create table cake(id int,cakeName varchar(20),cakeColor varchar(20),cakePrice double,cakeShape varchar(20),
@@ -22,9 +21,9 @@ select *from cake where createLocation='Banglore' order by id;
 select * from cake where cakeColor='green' order by cakeType; 
 
 /*DISTINCT*/
-select distinct(id)from bank;
-select distinct(createLocation)from bank;/*error*/
-select distinct (cakeShape)from bank;
+select distinct(id)from cake;
+select distinct(createLocation)from cake;
+select distinct (cakeShape)from cake;
 select distinct(createBy)from cake;
 
 /*RENAME TABLE*/
