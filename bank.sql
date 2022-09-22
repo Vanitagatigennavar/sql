@@ -12,6 +12,22 @@ insert into bank (id,noOfCustomers,bName,location,createdate)values (5,800,'PNB'
 insert into bank (id,noOfCustomers,bName,location,createdate)values (6,800,'PNB','belagavi',now());
 select * from bank;
 
+/*NOT IN*/
+select * from bank where id not in(1,2);/*exempted 1&2 id whole id display*/
+
+/*DISPLAY*/
+select id from bank;/* only id column display*/
+
+/*DELETE*/
+delete from bank where id=8;
+
+/*only two columns display*/
+select location,createBy from bank ;
+
+select location from bank where location  like 'b%';
+
+select concat(bName,location)from bank;
+
 /*CASE MANIPULATIVE FUNCTIONS*/
 select upper(LOCATION)from bank;/* SHOWING THE UPPERCASE VALUE IN WHOLE COLUMN*/
 SELECT LOWER(LOCATION)FROM BANK;/* SHOWING THE LOWERCASE VALUE IN WHOLE COLUMN*/

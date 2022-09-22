@@ -55,5 +55,12 @@ select avg(id)from cake;
 select avg(cakePrice) from cake;
 
 
+/*data tyfe change*/
+alter table cake modify cakePrice bigint;
+
+ 
+
+
+
 
 
