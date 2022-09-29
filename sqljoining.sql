@@ -1,0 +1,30 @@
+INNER JOIN:
+USE XWORKZODC;
+CREATE TABLE A(id int);
+CREATE TABLE B(ID INT);
+INSERT INTO B VALUES(9);
+INSERT INTO A VALUES(3);
+
+SELECT A.ID,b.ID FROM A INNER JOIN xworkzodc ON A.ID,b.ID;
+select * from A;
+select * from B;
+SELECT *FROM BANK;
+select bn.id,bn.bName,bn2.id,bn2.bName from bank bn inner join
+bank2 bn2 on bn.name=bn2.name;
+
+right join :
+select A.ID,B.ID FROM A RIGHT JOIN B ON A.ID=B.ID;/* IT RETURNS LEFT TABLE WIIL BE NULL:*/
+
+
+LEFT JOIN :
+
+SELECT A.ID,B.ID FROM A LEFT JOIN B ON A.ID=B.ID;
+
+FULL OUTER JOIN :
+SELECT A.ID,B.ID FROM A FULL OUTER JOIN B ON A.ID =B.ID ;
+SELECT *FROM A;
+SELECT *FROM B;
+
+
+
+
