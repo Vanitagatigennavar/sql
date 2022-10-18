@@ -1,0 +1,1 @@
+SELECT * FROM xworkzodc.milk_shop;
